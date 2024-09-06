@@ -1,27 +1,30 @@
 body {
-   background: radial-gradient(circle at -4% 52.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
-   width: 100%;
-   height: 100vh;
+    background: radial-gradient(circle at -4% 52.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
+    width: 100%;
+    height: 100vh;
 }
 
 .container {
     text-align: center;
-    color:  #fff;
+    color: #fff;
     width: 100%;
     height: 100vh;
-    
+
 }
+
 .links {
-    padding-bottom: 10px ;    
+    padding-bottom: 10px;
 }
+
 img {
     background-color: #fff;
     width: 200px;
-   
+
     border-radius: 50%;
     clip-path: circle(150px);
     margin: 30px;
 }
+
 .texto-paragrafo {
     width: 80%;
     flex-direction: column;
@@ -32,18 +35,25 @@ img {
     text-align: center;
     align-items: center;
 }
+
 .paragrafo {
     font-size: 18pt;
+    text-overflow: ellipsis;
+
 }
+
 a .paragrafo {
     text-decoration: none;
-    color: #fff ;
+    color: #fff;
+    text-overflow: ellipsis;
+
 }
+
 .container-selecao {
     text-align: center;
     display: flex;
     align-items: center;
-    margin: 20px  auto;
+    margin: 20px auto;
     font-size: 20px;
     background-color: #fff;
     width: 50%;
@@ -52,17 +62,40 @@ a .paragrafo {
     background-color: transparent;
     border: #fff 2px solid;
     cursor: pointer;
-    
+
+
 }
+
 .container-selecao:hover {
     background-color: #ffffff27;
 
 }
+
 a {
     text-decoration: none;
-    margin:0 10px;
+    margin: 0 10px;
     color: #fff;
 }
+
 i {
     padding: 0 5px;
+}
+
+/* */
+@media screen and (max-width: 600px) {
+    .paragrafo {
+        font-size: 18pt;
+    }
+
+    .container-selecao {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    img {
+        width: 200px;
+        clip-path: circle(100px);
+    }
 }
